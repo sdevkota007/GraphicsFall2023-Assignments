@@ -110,7 +110,7 @@ shaderProgram_skybox = shaderLoaderV3.ShaderProgram("shaders/skybox/vert_skybox.
 # **************************************************************************************************************
 '''
 # Lets load our objects
-obj = ObjLoader("objects/raymanModel.obj")
+obj = ObjLoader("objects//rayman/raymanModel.obj")
 
 # *********** Lets define model matrix ***********
 translation_mat = pyrr.matrix44.create_from_translation(-obj.center)
