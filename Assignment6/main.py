@@ -75,11 +75,11 @@ glBindBuffer(GL_ARRAY_BUFFER, vbo1)
 glBufferData(GL_ARRAY_BUFFER, obj1.vertices.nbytes, obj1.vertices, GL_STATIC_DRAW)
 
 # Configure vertex attributes for object 1
-position_loc = glGetAttribLocation(shader1, "position")
+position_loc = 0
 glVertexAttribPointer(position_loc, obj1.size_position, GL_FLOAT, GL_FALSE, obj1.stride, ctypes.c_void_p(obj1.offset_position))
 glEnableVertexAttribArray(position_loc)
 
-normal_loc = glGetAttribLocation(shader1, "normal")
+normal_loc = 1
 glVertexAttribPointer(normal_loc, obj1.size_normal, GL_FLOAT, GL_FALSE, obj1.stride, ctypes.c_void_p(obj1.offset_normal))
 glEnableVertexAttribArray(normal_loc)
 # *************************************************************************
@@ -96,11 +96,11 @@ glBindBuffer(GL_ARRAY_BUFFER, vbo2)
 glBufferData(GL_ARRAY_BUFFER, obj2.vertices.nbytes, obj2.vertices, GL_STATIC_DRAW)
 
 # Configure vertex attributes for object 1
-position_loc = glGetAttribLocation(shader2, "position")
+position_loc = 0
 glVertexAttribPointer(position_loc, obj2.size_position, GL_FLOAT, GL_FALSE, obj2.stride, ctypes.c_void_p(obj2.offset_position))
 glEnableVertexAttribArray(position_loc)
 
-normal_loc = glGetAttribLocation(shader2, "normal")
+normal_loc = 1
 glVertexAttribPointer(normal_loc, obj2.size_normal, GL_FLOAT, GL_FALSE, obj2.stride, ctypes.c_void_p(obj2.offset_normal))
 glEnableVertexAttribArray(normal_loc)
 # *************************************************************************

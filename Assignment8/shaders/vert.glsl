@@ -1,7 +1,7 @@
 #version 330 core
 
-in vec3 position; // Attribute
-in vec3 normal;   // Attribute
+layout (location = 0) in vec3 position; // Attribute
+layout (location = 1) in vec3 normal;   // Attribute
 
 out vec3 fragNormal;
 
