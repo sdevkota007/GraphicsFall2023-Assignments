@@ -110,7 +110,9 @@ shaderProgram_skybox = shaderLoaderV3.ShaderProgram("shaders/skybox/vert_skybox.
 # **************************************************************************************************************
 '''
 # Lets load our objects
-obj = ObjLoader("objects//rayman/raymanModel.obj")
+# obj = ObjLoader("objects//rayman/raymanModel.obj")
+# obj = ObjLoader("objects/lordvoldemort/lordvoldemort.obj")
+obj = ObjLoader("objects/stormtrooper/stormtrooper.obj")
 
 # *********** Lets define model matrix ***********
 translation_mat = pyrr.matrix44.create_from_translation(-obj.center)
@@ -196,7 +198,9 @@ glEnableVertexAttribArray(position_loc)
 # Load the 2D texture and attach the sampler variable "tex" in the object shader to texture unit 0.
 # **************************************************************************************************************
 '''
-obj_tex_id = load_2d_texture("objects/rayman/raymanModel.png")
+# obj_tex_id = load_2d_texture("objects/rayman/raymanModel.png")
+# obj_tex_id = load_2d_texture("objects/lordvoldemort/lordvoldemort.png")
+obj_tex_id = load_2d_texture("objects/stormtrooper/stormtrooper.jpg")
 
 # shaderProgram_obj["tex2D"] = 1   # Okay this might be confusing. Here 0 indicates texture unit 0. Note that "tex" is a sampler variable in the fragment shader. It is not an integer.
 # **************************************************************************************************************
