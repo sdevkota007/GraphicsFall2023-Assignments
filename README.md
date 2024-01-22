@@ -16,7 +16,26 @@ All of these packages can be installed using pip:
 pip install pyopengl pyopengl-accelerate pygame pyrr numpy
 ```
 
+### Basic Examples are available here: 
+https://github.com/sdevkota007/GraphicsFall2023
 
+## Examples in this repo
 
+### [Loading Objects](3_loadingObjects)
 
-More Examples are available here:
+### [Transformations](4_transformations)
+
+### [Camera](5_camera)
+
+### [Multi Viewport](6_multiViewport)
+
+### [Lighting and Material](7_lightingAndMaterial)
+
+### [Toon Shading](8_toonShading)
+
+### [Textures](9_textures)
+
+### [Shadow Mapping](10_shadowMapping)
+
+### [Physically Based Rendering](11_PBR)
+

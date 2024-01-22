@@ -1,6 +1,6 @@
 from pyassimp import load
 
-with load('../Assignment4/objects/raymanModel.obj') as scene:
+with load('../objects/rayman/raymanModel.obj') as scene:
 
     assert len(scene.meshes)
     mesh = scene.meshes[0]
